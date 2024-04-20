@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pesto_logo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleLogin"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"
+            android:backgroundTint="@color/purple_700"
+            android:letterSpacing="0.01"
+            android:onClick="@{(v)->onClick.onClick(v)}"
+            android:padding="0dp"
+            android:text="@string/sign_in_with_google"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:icon="@drawable/googleg_standard_color_18"
+            app:iconGravity="textStart"
+            app:iconPadding="6dp"
+            app:iconTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:rippleColor="@color/purple_700"
+            app:strokeColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
