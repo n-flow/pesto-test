@@ -39,3 +39,6 @@
   - Frontend: Android Studio - Kotlin, Java
   - Database: Firebase Realtime DB
   - Authentication: OAuth (Gmail)
+
+# Junit Test <!-- omit in toc -->
+  - Added Junit test only for add task (Test purpose only)
